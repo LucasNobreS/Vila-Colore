@@ -351,6 +351,35 @@
       font-weight: 600;
     }
 
+    /* ── HERO RESPONSIVO (MOBILE) ────────────── */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr !important; /* Força uma coluna */
+    gap: 2rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-img {
+    display: flex !important; /* IMPEDE QUE A IMAGEM SEJA ESCONDIDA */
+    width: 100% !important;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
     /* ── SECTION COMMONS ─────────────────────── */
     .section {
       padding: 4rem 1.25rem;
